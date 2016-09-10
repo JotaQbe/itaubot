@@ -1,0 +1,117 @@
+/*=======================================
+Template Design By MarkUps.
+Author URI : http://www.markups.io/
+========================================*/
+
+.menu-wrap li a:hover,
+.menu-wrap li a:focus {
+  color: #ed7301;
+}
+
+.download-btn{
+  background-color: #ed7301;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #ed7301;
+}
+
+.main-nav a:active {
+  color: #ed7301;
+}
+
+.title-area .title span{
+  color: #ed7301;
+}
+
+.title-area .title::before {
+  background-color: #ed7301;
+}
+
+.features-list li:hover .features-content h4{
+  color: #ed7301;
+}
+
+.features-list li:hover .fa{
+  background-color: #ed7301;
+}
+
+.features-list i:hover{
+  background-color: #ed7301;
+  color: #fff;
+}
+
+.feature-price .single-plan-head{
+  background-color: #ed7301;
+}
+
+.single-plan-head p > span {
+  color: #ed7301;
+}
+
+.single-plan-bottom .signup-btn {
+  background-color: #ed7301;
+}
+
+.screenshots-slide li a:hover{
+  border-color: #ed7301;
+}
+
+.screenshots-slide .slick-dots li button:hover,
+.screenshots-slide .slick-dots li.slick-active button {
+  background-color: #ed7301;
+}
+
+.single-download:hover,
+.single-download:focus{
+  background-color: #ed7301;
+}
+
+.testi-company{
+  color: #ed7301;
+}
+
+.testi-text:before{
+  color: #ed7301;
+}
+
+.testimonial-slider .slick-dots li.slick-active {
+  background-color: #ed7301;
+}
+
+.subcr-form i {
+  color: #ed7301;
+}
+
+.subcr-form .subcr-btn {
+  background-color: #ed7301;
+}
+
+.contact-form .form-control:focus {
+  border-color: #ed7301;
+}
+
+.send-btn:hover,
+.send-btn:focus{
+  background-color: #ed7301;
+}
+
+.home-btn a:hover,
+.home-btn a:focus{
+  color: #ed7301;
+}
+.blog-pagination > li > a:hover,
+.blog-pagination > li > span:hover,
+.blog-pagination > li > a:focus,
+.blog-pagination > li > span:focus{
+  background-color: #ed7301;
+  border-color:#ed7301;
+}
+
+
+
+/*=======================================
+Template Design By WpFreeware Team.
+Author URI : http://www.wpfreeware.com/
+========================================*/

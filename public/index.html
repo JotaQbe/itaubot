@@ -1,17 +1,41 @@
-<!-- 
-
-Copyright 2016-present, Facebook, Inc.
-All rights reserved.
-
-This source code is licensed under the license found in the
-LICENSE file in the root directory of this source tree.
-
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Messenger Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Itaú : ahora el banco es tu amigo</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>
+     <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/orange-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Cabin for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for Logo   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+
   </head>
   <body>
+
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -30,30 +54,279 @@ LICENSE file in the root directory of this source tree.
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <h1>Messenger Demo</h1>
+  <!-- Start header section -->
+  <header id="header">
+    <div class="header-inner">
+      <!-- Header image -->
+      <img src="assets/images/header-bg.jpg" alt="img">
 
-    <div>
-      <p>The "Send to Messenger" plugin will trigger an authentication callback to your webhook.</p>
+      <div class="overlay">
+        <div class="header-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header-top">
+                  <!-- Start logo area -->
+                  <div class="logo-area logo">
+                    <!-- Image based logo -->
+                    Asistente <img src="assets/images/itau-logo.png" alt="logo">
+                    <!-- Text based logo -->
+                    <!-- <a class="logo" href="index.html">App Landy.</a> -->
+                  </div>
+                  <!-- End logo area -->
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="header-bottom">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="header-bottom-left">
+                      <h1>Ahora Itaú es tu amigo</h1>
+                      <p>Te presentamos a tu asistente bancario virtual que te permitirá realizar operaciones y conseguir información de interés sobre productos y servicios Itaú de una forma fácil.</p>
 
-      <div class="fb-send-to-messenger" 
-        messenger_app_id='553890314802191'
-        page_id='564796023706174'
-        data-ref="PASS_THROUGH_PARAM" 
-        color="blue" 
-        size="standard">
+                      <div class="fb-messengermessageus"
+                        messenger_app_id='553890314802191'
+                        page_id='946503632139398'
+                        color="blue"
+                        size="standard">
+                      </div>
+
+                      <div class="fb-send-to-messenger"
+                        messenger_app_id='553890314802191'
+                        page_id='946503632139398'
+                        data-ref="PASS_THROUGH_PARAM"
+                        color="blue"
+                        size="standard">
+                      </div>
+                      <a class="download-btn" href="#">Hablemos</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="header-bottom-right">
+                      <!-- <img src="assets/images/iphone-group1.png" alt="iphone grpup img"> -->
+                      <img src="assets/images/Nexus-6-MockUp-group.png" alt="iphone grpup img">
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </header>
+  <!-- End header section -->
 
-    <div>
-      <p>The "Message Us" plugin takes the user directly to Messenger and into a thread with your Page.</p>
-
-      <div class="fb-messengermessageus" 
-        messenger_app_id='553890314802191'
-        page_id='946503632139398'
-        color="blue"
-        size="standard">
+  <!-- Start Features -->
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Funcionalidades <span>Principales</span></h2>
+            <p>Con agente Itaú podés realizar diferentes tipo de operaciones, en el momento y lugar que quieras.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="features-area">
+            <div class="row">
+              <!-- Start features left -->
+              <div class="col-md-4">
+                <div class="features-left">
+                  <ul class="features-list features-list-left">
+                    <li class="wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                      <i class="fa fa-money"></i>
+                      <div class="features-content">
+                        <h4>Transferencia de fondos</h4>
+                        <p>Transfiere dinero a otras cuentas</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                      <i class="fa fa-comment"></i>
+                      <div class="features-content">
+                        <h4>Notificación de promos y descuentos</h4>
+                        <p>Recibe notificaciones de promos, descuentos e información de interes</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                      <i class="fa fa-question-circle"></i>
+                      <div class="features-content">
+                        <h4>Preguntas frecuentas</h4>
+                        <p>Consigue toda la información que necesites sobre productos y servicios</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                      <i class="fa fa-map-marker"></i>
+                      <div class="features-content">
+                        <h4>Ubicación de sucursales y cajeros</h4>
+                        <p>Ubica la sucursal de Itaú o cajero más cercano</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End features left -->
+              <!-- Start features img -->
+              <div class="col-md-4">
+                <div class="feature-img wow fadeInUp">
+                  <img src="assets/images/nexus-6-single.png" alt="iPhone mockup">
+                </div>
+              </div>
+              <!-- End features img -->
+              <!-- Start features right -->
+              <div class="col-md-4">
+                <div class="features-right">
+                  <ul class="features-list features-list-right">
+                    <li class="wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                      <i class="fa fa-credit-card"></i>
+                      <div class="features-content">
+                        <h4>Pago de servicios y tarjetas</h4>
+                        <p>Paga tus facturas de ANTEL, UTE y otros servicios así como tarjetas de cŕedito</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                      <i class="fa fa-calendar-check-o"></i>
+                      <div class="features-content">
+                        <h4>Agenda de cita</h4>
+                        <p>Agendate para ser atendido en la fecha y hora programada</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                      <i class="fa fa-user"></i>
+                      <div class="features-content">
+                        <h4>Consulta de datos y servicios personales</h4>
+                        <p>Consulta tus saldos, estado de cuentas, millas acumuladas, entre otras cosas</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                      <i class="fa fa-support"></i>
+                      <div class="features-content">
+                        <h4>Soporte 24/7</h4>
+                        <p>Recibe ayuda las 24 horas del día, 7 días a la semana</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End features right -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+  <!-- End Features -->
+
+
+  <!-- Start screenshot -->
+  <section id="screenshot">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area wow fadeInUp">
+            <h2 class="title">Mirá todo <span>lo que podés hacer</span></h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="screenshots-area">
+            <ul class="screenshots-slide">
+              <li class="col-md-3 wow fadeInLeft">
+               <a class="fancybox" data-fancybox-group="gallery" href="assets/images/app-screenshot-popup.jpg"><img src="assets/images/app-screenshot.jpg" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="assets/images/app-screenshot-popup.jpg"><img src="assets/images/app-screenshot.jpg" alt="app screenshot">
+                    <div class="view-btn-area">
+                      <span class="fa fa-search view-btn"></span>
+                    </div>
+                 </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="assets/images/app-screenshot-popup.jpg"><img src="assets/images/app-screenshot.jpg" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="assets/images/app-screenshot-popup.jpg"><img src="assets/images/app-screenshot.jpg" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+              <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="assets/images/app-screenshot-popup.jpg"><img src="assets/images/app-screenshot.jpg" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="assets/images/app-screenshot-popup.jpg"><img src="assets/images/app-screenshot.jpg" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="assets/images/app-screenshot-popup.jpg"><img src="assets/images/app-screenshot.jpg" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="assets/images/app-screenshot-popup.jpg"><img src="assets/images/app-screenshot.jpg" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End screenshot -->
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text">
+            <img src="assets/images/itau-logo.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End -->
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- Add fancyBox -->
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script>
+  <!-- Off-canvas Menu -->
+  <script src="assets/js/classie.js"></script>
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
 
   </body>
 </html>
