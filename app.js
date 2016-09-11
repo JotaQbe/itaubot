@@ -208,11 +208,9 @@ const Wit = wit.Wit;
 const client = new Wit({accessToken: 'W7FRSECWMUW4MOC45NYCCWORC2ZIBLIE'});
 
 
-function sendToBot(messageText){
-  console.log('sending: '+messageText);
-  client.message(messageText, {})
+function sendToBot(userID,messageText){
+  client.converse(userID, messageText, {})
   .then((data) => {
-   // sendTextMessage(senderID, messageText);
     console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
   })
   .catch(console.error);
@@ -326,7 +324,7 @@ function receivedMessage(event) {
         break;
 
       default:
-        sendToBot(messageText);
+        sendToBot(senderID,messageText);
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
