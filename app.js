@@ -209,16 +209,11 @@ const client = new Wit({accessToken: 'W7FRSECWMUW4MOC45NYCCWORC2ZIBLIE'});
 
 
 function sendToBot(userID,messageText){
-
-  client.converse(userID, messageText, {})
+  client.runActions(userID, messageText, {})
   .then((data) => {
     console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
     sendTextMessage(userID,data.msg);    
-  }).then((data2) => {
-    console.log('PRUEBA: ' + JSON.stringify(data2));
-    sendTextMessage(userID,data2.msg);    
-  })
-  .catch(console.error);
+  }).catch(console.error);
 }
 
 
