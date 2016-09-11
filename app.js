@@ -202,7 +202,7 @@ function receivedAuthentication(event) {
 }
 
 
-
+const {Wit, log} = require('node-wit');
 const client = new Wit({accessToken: 'W7FRSECWMUW4MOC45NYCCWORC2ZIBLIE'});
 
 
