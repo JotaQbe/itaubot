@@ -207,16 +207,22 @@ const Wit = wit.Wit;
 
 const client = new Wit({accessToken: 'W7FRSECWMUW4MOC45NYCCWORC2ZIBLIE'});
 
-const interactive = wit.interactive;
-interactive(client);
-
 
 function sendToBot(userID,messageText){
+
   client.converse(userID, messageText, {})
   .then((data) => {
     console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
-    sendTextMessage(userID,data.msg);    
+    if(data.msg){
+      sendTextMessage(userID,data.msg);   
+    }else if(data.entities){
+       sendTextMessage(userID,"some"); 
+    }
+     
   }).catch(console.error);
+
+
+
 }
 
 
