@@ -201,15 +201,16 @@ function receivedAuthentication(event) {
   sendTextMessage(senderID, "Authentication successful");
 }
 
-const wit = require('node-wit');
-const log = wit.log;
-const Wit = wit.Wit;
+const {Wit,log} = require('node-wit');
 
 const client = new Wit({accessToken: 'W7FRSECWMUW4MOC45NYCCWORC2ZIBLIE'});
 
+const {interactive} = require('node-wit');
+interactive(client);
+
 
 function sendToBot(userID,messageText){
-  client.message(userID, messageText, {})
+  client.converse(userID, messageText, {})
   .then((data) => {
     console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
     sendTextMessage(userID,data.msg);    
