@@ -214,6 +214,9 @@ function sendToBot(userID,messageText){
   .then((data) => {
     console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
     sendTextMessage(userID,data.msg);    
+  }).then((data2) => {
+    console.log('PRUEBA: ' + JSON.stringify(data2));
+    sendTextMessage(userID,data2.msg);    
   })
   .catch(console.error);
 }
