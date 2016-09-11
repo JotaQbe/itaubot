@@ -201,11 +201,13 @@ function receivedAuthentication(event) {
   sendTextMessage(senderID, "Authentication successful");
 }
 
-const {Wit,log} = require('node-wit');
+const wit = require('node-wit');
+const log = wit.log;
+const Wit = wit.Wit;
 
 const client = new Wit({accessToken: 'W7FRSECWMUW4MOC45NYCCWORC2ZIBLIE'});
 
-const {interactive} = require('node-wit');
+const interactive = wit.interactive;
 interactive(client);
 
 
