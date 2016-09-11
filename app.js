@@ -317,14 +317,12 @@ function receivedMessage(event) {
         sendAccountLinking(senderID);
         break;
 
-      default:{
+      default:
         client.message(messageText, {})
             .then((data) => {
               console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
             })
-            .catch(console.error);
-      }
-        
+            .catch(console.error);       
       }
     }
   } else if (messageAttachments) {
