@@ -325,7 +325,7 @@ function receivedMessage(event) {
       default:
         sendToBot(messageText);
     }
-  } else if (messageAttachments) {
+  } else (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
   }
 }
