@@ -206,9 +206,14 @@ function receivedAuthentication(event) {
 const client = new Wit({accessToken: 'W7FRSECWMUW4MOC45NYCCWORC2ZIBLIE'});
 
 
-
-
-
+function sendToBot(messageText){
+console.log('sending: '+messageText);
+client.message(messageText, {})
+.then((data) => {
+  console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
+})
+.catch(console.error);
+}
 
 
 /*
@@ -318,12 +323,7 @@ function receivedMessage(event) {
         break;
 
       default:
-        client.message(messageText, {})
-            .then((data) => {
-              console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
-            })
-            .catch(console.error);       
-      }
+        sendToBot(messageText);
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
