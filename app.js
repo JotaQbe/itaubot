@@ -201,6 +201,16 @@ function receivedAuthentication(event) {
   sendTextMessage(senderID, "Authentication successful");
 }
 
+
+
+const client = new Wit({accessToken: 'W7FRSECWMUW4MOC45NYCCWORC2ZIBLIE'});
+
+
+
+
+
+
+
 /*
  * Message Event
  *
@@ -307,8 +317,15 @@ function receivedMessage(event) {
         sendAccountLinking(senderID);
         break;
 
-      default:
-        sendTextMessage(senderID, messageText);
+      default:{
+        client.message(messageText, {})
+            .then((data) => {
+              console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
+            })
+            .catch(console.error);
+      }
+        
+      }
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
