@@ -215,10 +215,7 @@ function sendToBot(userID,messageText){
     console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
     if(data.msg){
       sendTextMessage(userID,data.msg);   
-    }else if(data.entities){
-       sendTextMessage(userID,"some"); 
-    }
-     
+    }     
   }).catch(console.error);
 
 
